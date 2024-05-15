@@ -1,4 +1,4 @@
-# Esploratory Analysis
+# Exploratory Analysis
 
 Please complete your proposal following the outline below.
 
