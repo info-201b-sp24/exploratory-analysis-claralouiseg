@@ -100,22 +100,19 @@ Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
 
-### Chart 1
+### Chart 1: Top Ten Movie Distributers
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r}
+print(Chart_1)
 ```
 
-### Chart 2
+### Chart 2: Number of Top Grossing Movies by Warner Bros 
 
-Include a chart
+```{r}
+print(Chart_2)
+```
 
-Describe why you chose this chart and what information it reveals
+This chart shows the number of top grossing movies per year by the top distributor of top grossing movies: Warner Bros. It reveals how successful Warner Bros. has been over the years which can reveal the way the public has responded to their movies since 1983. According to the chart **Number of Top Grossing Movies by Warner Bros** here was a steady increase in the number of top grossing movies up until 2009. There was a consistent fluctuation in the number until a decrease in 2020. When thinking about the context of the time, a decrease in 2020 may be heavily correlated with the pandemic.
 
 ### Chart 3
 
