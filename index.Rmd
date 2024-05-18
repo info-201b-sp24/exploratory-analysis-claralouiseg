@@ -19,7 +19,6 @@ Our initiative examines the data of the highest-grossing films to uncover trends
 ## Keywords
 
 3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
 
 Movie Revenue Patterns,
 Box Office Insights,
@@ -96,9 +95,22 @@ Additionally, while many top-grossing movies are included, the data does not acc
 
 ### Table
 
-Include a table of aggregate information
+| Title | Opening Weekend Sales | Total Gross Earnings |
+| :---         |     :---:      |          ---: |
+| Star Wars: Episode VII - The Force Awakens    | 247966675      | 936662225     |
+| Avengers: Endgame  | 357115007     | 858373000    |
+| Spider-Man: No Way Home     | 260138569      | 804793477     |
+| Avatar  | 77025481     | 749766139    |
+| Top Gun: Maverick  | 126707459     | 718732821    |
+| Black Panther     | 202003951      | 700059566     |
+| Avatar: The Way of Water  | 134100226     | 684075767    |
+| Avengers: Infinity War  | 257698183     | 678815482    |
+| Jurassic World     | 208806270      | 652270625     |
+| Barbie  | 162022044     | 636238421    |
 
-Describe why you included the table and what information it reveals
+
+The table lists the top 10 grossing movies and highlights the relationship between their opening weekend sales and their total gross earnings. By comparing opening weekend sales with total gross earnings, it helps to understand the dynamics of movie performance, indicating how initial audience interest translates into long-term revenue
+
 
 ### Chart 1: Top Ten Movie Distributers
 
