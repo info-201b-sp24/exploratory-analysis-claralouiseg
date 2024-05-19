@@ -105,6 +105,7 @@ Describe why you included the table and what information it reveals
 ```{r}
 print(Chart_1)
 ```
+
 The Chart Above documents the top 10 distributors who have created the highest number of top grossing movies between the years 1983 and 2024. 
 
 ### Chart 2: Number of Top Grossing Movies by Warner Bros 
