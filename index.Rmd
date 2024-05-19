@@ -118,7 +118,7 @@ The table lists the top 10 grossing movies and highlights the relationship betwe
 ggplot(top_distributors, aes(x=reorder(Distributor, -n), y = n, group = 1)) + geom_bar(stat = "identity", fill = 'blue') + theme_minimal() + labs(title = 'Top Ten Distributors', x = 'Distributor', y = 'Number of Movies') + theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-The Chart Above documents the top 10 distributors who have created the highest number of top grossing movies between the years 1983 and 2024. 
+The Chart Above documents the top 10 distributors who have created the highest number of top grossing movies between the years 1983 and 2024. This can help narrow down our focus to the top distributers when analyzing other aspects of what contributes to a movies success. 
 
 ### Chart 2: Number of Top Grossing Movies by Warner Bros 
 
