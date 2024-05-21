@@ -1,4 +1,5 @@
-# Exploratory Analysis
+title: "Exploratory Analysis: Top Grossing Movie Analysis"
+output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -10,7 +11,10 @@ library(ggplot2)
 library(kableExtra)
 ```
 
-put summary chunk here
+```{r summary info, echo=FALSE, include=FALSE}
+knit_child(Summary_Info.Rmd)
+```
+
 
 ### Table
 
@@ -43,7 +47,7 @@ The Chart Above documents the top 10 distributors who have created the highest n
 ### Chart 2: Number of Top Grossing Movies by Warner Bros 
 
 ```{r Chart_2, message=FALSE, warning=TRUE}
-source("scripts/Chart_2.R")
+chart_2 <- "scripts/Chart_2.R"
 plot(Chart_2)
 ```
 

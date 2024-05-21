@@ -18,3 +18,4 @@ Chart_2 <- ggplot(warner_movies_per_year, aes(x = Year, y = n)) +
   theme_minimal() +
   labs(title = 'Number of Top Grossing Movies by Warner Bros. (1983-2024)', x = 'Year', y = 'Number of Movies') + scale_x_continuous(breaks = seq(1983, 2024, by = 1)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
