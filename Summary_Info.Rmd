@@ -2,8 +2,8 @@
 
 
 ### Authors
-Clara Guyot & Rianna Joseph
-cguyot@uw.edu, riannaj@uw.edu
+Clara Guyot , Rianna Joseph
+###cguyot@uw.edu, riannaj@uw.edu
 
 ### Date
 Spring 2024
