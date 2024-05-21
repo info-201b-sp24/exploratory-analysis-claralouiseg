@@ -7,12 +7,10 @@ library(tidyverse)
 library(dplyr)
 library(readxl)
 library(ggplot2)
+library(kableExtra)
 ```
 
-```{r Summary_Info.R, echo=FALSE, message=FALSE}
-source("scripts/Summary_Info.Rmd")
-```
-
+put summary chunk here
 
 ### Table
 
@@ -35,9 +33,9 @@ The table lists the top 10 grossing movies and highlights the relationship betwe
 
 ### Chart 1: Top Ten Movie Distributers
 
-```{r Chart_1.R, echo=FALSE, message=FALSE}
+```{r Chart_1, echo=FALSE, message=FALSE}
 source("scripts/Chart_1.R")
-plot(g)
+plot(Chart_1)
 ```
 
 The Chart Above documents the top 10 distributors who have created the highest number of top grossing movies between the years 1983 and 2024. This can help narrow down our focus to the top distributers when analyzing other aspects of what contributes to a movies success. 
@@ -45,46 +43,14 @@ The Chart Above documents the top 10 distributors who have created the highest n
 ### Chart 2: Number of Top Grossing Movies by Warner Bros 
 
 ```{r Chart_2, message=FALSE, warning=TRUE}
-library(ggplot2)
-library(tidyverse)
-library(dplyr)
-
-Dates <- Top_Highest_Openings %>%
-  mutate(Year = as.numeric(format(as.Date(Date, format="%d-%m-%Y"), "%Y")))
-
-Years <- Top_Highest_Openings %>%
-  mutate(Year = as.numeric(format(as.Date(Date, format="%d-%m-%Y"), "%Y")))
-  
-min_year <- min(movies$Year, na.rm = TRUE)
-max_year <- max(movies$Year, na.rm = TRUE)
-
-warner_bros_movies <- Years %>%
-  filter(Distributor == "Warner Bros." & Year >= 1983 & Year <= 2024)
-  
-warner_movies_per_year <- warner_bros_movies %>% group_by(Year) %>% summarise(n = n())
-
-ggplot(warner_movies_per_year, aes(x = Year, y = n)) +
-geom_line(color = 'blue') +
-geom_point(color = 'blue') +
-theme_minimal() +
-labs(title = 'Number of Top Grossing Movies by Warner Bros. (1983-2024)', x = 'Year', y = 'Number of Movies') + scale_x_continuous(breaks = seq(1983, 2024, by = 1)) +
-theme(axis.text.x = element_text(angle = 45, hjust = 1))
+source("scripts/Chart_2.R")
+plot(Chart_2)
 ```
 
 This chart shows the number of top grossing movies per year by the top distributor of top grossing movies: Warner Bros. It reveals how successful Warner Bros. has been over the years which can reveal the way the public has responded to their movies since 1983. According to the chart **Number of Top Grossing Movies by Warner Bros** here was a steady increase in the number of top grossing movies up until 2009. There was a consistent fluctuation in the number until a decrease in 2020. When thinking about the context of the time, a decrease in 2020 may be heavily correlated with the pandemic.
 
 ### Chart 3: Total Gross Earnings of a Movie Over Time
 
-```{r}
-Top_Highest_Openings$Date <- as.Date(movies_data$Date, format = "%Y-%m-%d")
-ggplot(Top_Highest_Openings, aes(x = Date, y = Total_Gross, group = Release, color = Release)) +
-  geom_line() +
-  labs(title = "Total Gross Earnings over Time",
-       x = "Release Date",
-       y = "Total Gross Earnings",
-       color = "Movie Title") +
-  theme_minimal()
-```
 
 This chart shows the total gross earnings of multiple movies plotted against their respective release dates. Each movie is represented by a distinct colored line, allowing for easy comparison of revenue trends over time. It helps visualize the financial performance of movies throughout their theatrical run, indicating which movies experienced higher or lower earnings over specific periods after their release.
 

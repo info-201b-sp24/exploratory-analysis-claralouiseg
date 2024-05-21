@@ -12,7 +12,7 @@ warner_bros_movies <- Years %>%
 
 warner_movies_per_year <- warner_bros_movies %>% group_by(Year) %>% summarise(n = n())
 
-ggplot(warner_movies_per_year, aes(x = Year, y = n)) +
+Chart_2 <- ggplot(warner_movies_per_year, aes(x = Year, y = n)) +
   geom_line(color = 'blue') +
   geom_point(color = 'blue') +
   theme_minimal() +
