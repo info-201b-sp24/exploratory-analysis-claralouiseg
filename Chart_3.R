@@ -1,8 +1,7 @@
-Top_Highest_Openings$Date %>% as.Date(movies_data$Date, format = "%Y-%m-%d")
-ggplot(Top_Highest_Openings, aes(x = Date, y = Total_Gross, group = Release, color = Release)) +
-  geom_line() +
-  labs(title = "Total Gross Earnings over Time",
-       x = "Release Date",
-       y = "Total Gross Earnings",
-       color = "Movie Title") +
-  theme_minimal()
+Dates <- Top_Highest_Openings %>%
+  mutate(Year = as.numeric(format(as.Date(Date, format="%d-%m-%Y"), "%Y")))
+
+total_gross_per_year <- Dates %>% group_by(Year) %>% summarize(`Total Gross` = sum(`Total Gross`, na.rm = TRUE))
+
+ggplot(total_gross_per_year, aes(x = Year, y = `Total Gross`)) + geom_line() + geom_point() +
+labs(title = "Total Gross Earnings per Year", x = "Year", y = "Total Gross Earnings") + theme_minimal()

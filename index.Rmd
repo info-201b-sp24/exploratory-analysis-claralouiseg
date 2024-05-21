@@ -56,5 +56,5 @@ This chart shows the number of top grossing movies per year by the top distribut
 ### Chart 3: Total Gross Earnings of a Movie Over Time
 
 
-This chart shows the total gross earnings of multiple movies plotted against their respective release dates. Each movie is represented by a distinct colored line, allowing for easy comparison of revenue trends over time. It helps visualize the financial performance of movies throughout their theatrical run, indicating which movies experienced higher or lower earnings over specific periods after their release.
+This chart shows the total gross earnings of the top grossing movies plotted against their respective release year (1983-2024). The total gross revenue for all of the movies is shown by a point for each year, allowing for easy comparison of revenue trends over time. It helps visualize the financial performance of movies throughout their theatrical run, indicating which years experienced higher or lower earnings. This can be compared to what was going on in the world at the time to gain insight into the habits of consumers in the context of social/political events. 
 
