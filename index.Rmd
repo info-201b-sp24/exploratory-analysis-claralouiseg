@@ -128,7 +128,7 @@ source("./Chart_1.R")
 plot(Chart1)
 ```
 
-The Chart Above documents the top 10 distributors who have created the highest number of top grossing movies between the years 1983 and 2024. This can help narrow down our focus to the top distributers when analyzing other aspects of what contributes to a movies success. 
+The Chart Above documents the top 10 distributors who have created the highest number of top grossing movies between the years 1983 and 2024. This can help narrow down our focus to the top distributors when analyzing other aspects of what contributes to a movies success. It can also assist in determining what makes a movie distributor successful. We can use this data as a guideline to research each company and what has contributed to their continuous success. 
 
 ### Chart 2: Number of Top Grossing Movies by Warner Bros 
 
