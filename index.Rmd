@@ -1,5 +1,3 @@
-title: "Exploratory Analysis: Top Grossing Movie Analysis"
-output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -12,12 +10,11 @@ library(kableExtra)
 ```
 
 
-
 ## Blockbuster Insights: Exploring the Data Behind Top-Grossing Films
 
 ### Authors
 Clara Guyot , Rianna Joseph
-###cguyot@uw.edu, riannaj@uw.edu
+cguyot@uw.edu, riannaj@uw.edu
 
 ### Date
 Spring 2024
@@ -135,7 +132,7 @@ The Chart Above documents the top 10 distributors who have created the highest n
 
 ### Chart 2: Number of Top Grossing Movies by Warner Bros 
 
-```{r Chart_2, message=FALSE, warning=TRUE}
+```{r Chart_2, message=FALSE, echo=FALSE}
 source("./Chart_2.R")
 plot(Chart_2)
 ```
